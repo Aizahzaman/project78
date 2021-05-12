@@ -1,0 +1,40 @@
+<html>
+    <head><title>Project-78</title></head>
+    <body>
+    <h1>My Family Book</h1> 
+    <img id="family_img" style="width: 300px;" src="IMG_0543.JPG" >
+    <br>
+    <br>
+    <br>
+    <label id="family_name" style="font-family: 'Times New Roman', Times, serif;font-size: x-large;">Aizah Zaman (Me)</label>
+    <br>
+    <br>
+    <br>
+    <br>
+    <button onclick="update()" style="font-size: large;background-color: cornflowerblue;">Next</button> 
+<script>
+var img_of_members=["IMG_0543.JPG","IMG_0903.JPG","IMG_0801.JPG","IMG_0657.JPG"];
+var name_of_memebrs=["Aizah Zaman (Me)","My Dad","My Mom","My Brother"];
+var i=0
+ function update(){
+    i++;
+    var number_fm=3
+    if (i > number_fm){
+        i=0;
+    }
+    var updated_img= img_of_members[i];
+    var updated_name= name_of_members[i];
+    document.getElementById("family_img").src=updated_img;
+    document.getElementById("family_name").innerHTML=updated_name;
+
+     }
+ 
+</script>   
+<style>
+body{
+    background:linear-gradient(#f54242 0%,#eb34bd 100%);
+    text-align: center;
+}
+</style>
+    </body>
+</html>
